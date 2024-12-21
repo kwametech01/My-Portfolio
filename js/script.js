@@ -45,14 +45,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Responsive Navbar Toggle
-    const navToggle = document.querySelector('.nav-toggle');
-    const navMenu = document.querySelector('nav ul');
+const navToggle = document.querySelector('.nav-toggle');
+const navMenu = document.querySelector('.nav-menu');
 
-    if (navToggle) {
-        navToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('show');
-        });
-    }
+navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+});
+
+
+    
 
     // Dynamic Year Update
     const footerYear = document.querySelector('footer p');
