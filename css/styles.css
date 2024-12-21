@@ -40,7 +40,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Hero Section */
+
 /* Hero Section */
 .hero {
     position: relative;
@@ -364,9 +364,9 @@ footer .socials a:hover {
 
 /* Logo Container */
 .logo {
-    position: absolute;
+    position: relative;
     top: 10px;
-    left: 20px;
+    left: auto-fit;
     display: flex;
     align-items: center;
 }
@@ -409,7 +409,10 @@ footer .socials a:hover {
 /* Adjust Navbar Padding for Logo */
 nav {
     position: relative; /* Allow logo placement inside */
-    padding: 1rem 1rem 1rem 100px; /* Add space for logo */
+    padding: 1rem; /* Reduce padding for smaller screens */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space out logo and navigation items */
 }
 
 /* Portfolio Page Styles */
