@@ -364,7 +364,7 @@ footer .socials a:hover {
 
 /* Logo Container */
 .logo {
-    position: relative;
+    position: absolute;
     top: 10px;
     left: auto-fit;
     display: flex;

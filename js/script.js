@@ -36,23 +36,6 @@ if (navToggle) {
     });
 }
 
-// Scroll-to-Top Button
-// const scrollTopButton = document.createElement('button');
-// scrollTopButton.textContent = '↑';
-// scrollTopButton.classList.add('scroll-top');
-// document.body.appendChild(scrollTopButton);
-
-// scrollTopButton.addEventListener('click', () => {
-   // window.scrollTo({ top: 0, behavior: 'smooth' });
-// });
-
-// window.addEventListener('scroll', () => {
-   // if (window.scrollY > 200) {
-     //   scrollTopButton.style.display = 'block';
-   // } else {
-     //   scrollTopButton.style.display = 'none';
-  //  }
-// });
 
 // Dynamic Year Update
 const footerYear = document.querySelector('footer p');
