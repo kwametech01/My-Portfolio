@@ -15,21 +15,22 @@ body {
 
 
     /* General Navbar Styles */
-nav {
+ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5em 1em;
     background-color: #1f4037; /* Dark green gradient tone */
     background-image: linear-gradient(120deg, #1f4037, #99f2c8);
-}
+} 
 
-nav ul {
+ nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
     margin: 0;
   padding: 0;
+  gap: 1.5rem;
 }
 
 nav ul li {
@@ -40,23 +41,30 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
+    font-weight: 600;s
+    transition: color 0.3s ease;
+}
+
+
+nav ul li a:hover {
+    color: #b0d6c9d2;
 }
 
 /* Mobile Navbar */
 @media (max-width: 768px) {
     .nav-menu {
-        display: none;
+        display: none; /* Hidden by default on mobile */
         flex-direction: column;
-        background-color: #111; /* Match your design */
+        background-color: #111; /* Background color for dropdown menu */
         position: absolute;
         top: 100%;
         right: 0;
-        width: 100%;
+        width: 100%; /* Full width dropdown */
         padding: 1em;
     }
 
     .nav-menu.show {
-        display: flex;
+        display: flex; /* Show menu when toggle is clicked */
     }
 
     .nav-menu li {
@@ -65,7 +73,7 @@ nav ul li a {
     }
 
     .nav-toggle {
-        display: block;
+        display: block; /* Display toggle button on mobile */
     }
 }
 
@@ -85,7 +93,6 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Hero Section */
 /* Hero Section */
 .hero {
     position: relative;
