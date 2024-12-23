@@ -5,26 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of Augustine Okechukwu Chima showcasing web development and hyper-realism artwork.">
     <title>Portfolio | Augustine Okechukwu Chima</title>
-    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
     <!-- Navbar -->
-    <nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="assets/images/logo.png" alt="Logo" class="animated-logo"><!-- Logo -->
-                </a> 
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="Logo" class="animated-logo" style="height: 50px;">
+            </a>
+            <!-- Navbar Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="portfolio.html" class="active">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
         </div>
     </nav>
 
@@ -46,7 +68,7 @@
                     <p>An agricultural web app with advanced features and payment integrations.</p>
                 </div>
                 <div class="portfolio-item">
-                    <img src="assets/images/web-project3.jpg" alt="Web Project 2">
+                    <img src="assets/images/web-project3.jpg" alt="Web Project 3">
                     <h3>Hall Management System</h3>
                     <p>A hall management system with advanced features and facial recognition integrations.</p>
                 </div>
@@ -62,22 +84,22 @@
                     <p>An artistic depiction of beauty using fine pencil strokes.</p>
                 </div>
                 <div class="portfolio-item">
-                    <img src="assets/images/artwork3.jpg" alt="Pencil Artwork 2">
+                    <img src="assets/images/artwork3.jpg" alt="Pencil Artwork 3">
                     <h3>Nature Sketch</h3>
                     <p>An artistic depiction of nature using fine pencil strokes.</p>
                 </div>
                 <div class="portfolio-item">
-                    <img src="assets/images/web-project4.jpg" alt="Web Project 2">
+                    <img src="assets/images/web-project4.jpg" alt="Web Project 4">
                     <h3>Personal Project</h3>
-                    <p>A portfolio website designed to showcase my skills and expeitise.</p>
+                    <p>A portfolio website designed to showcase my skills and expertise.</p>
                 </div>
                 <div class="portfolio-item">
-                    <img src="assets/images/artwork4.jpg" alt="Pencil Artwork 2">
+                    <img src="assets/images/artwork4.jpg" alt="Pencil Artwork 4">
                     <h3>Portrait Art</h3>
                     <p>A detailed pencil portrait showcasing hyper-realism techniques.</p>
                 </div>
                 <div class="portfolio-item">
-                    <img src="assets/images/web-project5.jpg" alt="Web Project 2">
+                    <img src="assets/images/web-project5.jpg" alt="Web Project 5">
                     <h3>Responsive Landing Page</h3>
                     <p>A responsive portfolio landing page with HTML, CSS, and JavaScript.</p>
                 </div>
@@ -98,6 +120,8 @@
             </div>
         </div>
     </footer>
-    <script src="js/script.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

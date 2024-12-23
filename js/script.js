@@ -31,27 +31,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Smooth Scrolling for Navbar Links
     document.querySelectorAll('nav ul li a').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
+    //     anchor.addEventListener('click', function (e) {
+    //         e.preventDefault();
+    //         const targetId = this.getAttribute('href').substring(1);
+    //         const targetElement = document.getElementById(targetId);
 
-            if (targetElement) {
-                targetElement.scrollIntoView({ behavior: 'smooth' });
-            } else {
-                console.warn(`Element with ID '${targetId}' not found.`);
-            }
-        });
-    });
+    //         if (targetElement) {
+    //             targetElement.scrollIntoView({ behavior: 'smooth' });
+    //         } else {
+    //             console.warn(Element with ID '${targetId}' not found.);
+    //         }
+    //     });
+    // });
 
-    // Responsive Navbar Toggle
-const navToggle = document.querySelector('.nav-toggle');
-const navMenu = document.querySelector('.nav-menu');
+    //     // Responsive Navbar Toggle
+    // const navToggle = document.querySelector('.nav-toggle');
+    // const navMenu = document.querySelector('.nav-menu');
 
-navToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('show');
-});
-
+    // navToggle.addEventListener('click', () => {
+    //     navMenu.classList.toggle('show');
+    // });
 
     
 
